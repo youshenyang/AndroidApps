@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用户通知中心界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+     <!-- 顶部栏 -->
+     <RelativeLayout android:layout_width="match_parent"
+                   android:layout_height="@dimen/top_nav_bar"
+                   android:gravity="center_vertical"
+                   android:background="@drawable/inform_center_top_bg">
+         <ImageView 
+             android:id="@+id/top_left_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/top_left_btn"
+             android:layout_marginLeft="4dp"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="哪有美食"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:layout_toRightOf="@id/top_left_btn"
+             android:layout_marginLeft="5dp"
+             />
+         
+         <ImageView 
+             android:id="@+id/top_more_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:background="@drawable/top_more_btn"
+             android:layout_marginRight="15dp"
+             />
+            
+         <ImageView 
+             android:id="@+id/inform_ring_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/inform_ring_btn"
+             android:layout_toLeftOf="@id/top_more_btn"
+             android:layout_marginRight="20dp"
+             />
+     </RelativeLayout>
+    
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="43dp"
+         android:orientation="horizontal"
+         android:background="@color/white"
+         >
+         <LinearLayout 
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             >
+            
+             <TextView 
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:text="动态通知"
+                 />
+             <ImageView 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/tab_selected_bg"/>
+         </LinearLayout>
+         <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="23dp"
+         android:background="@drawable/tab_seg_bg"
+         android:layout_marginTop="8dp"
+         />
+         <LinearLayout 
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             >
+            
+             <TextView 
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:text="系统消息"
+                 />
+             <ImageView 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/tab_selected_bg"
+                 android:visibility="invisible"
+                 />
+         </LinearLayout>
+     </LinearLayout>
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="vertical"
+         android:background="#f6f5f0"
+         >
+         <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/shadow"
+             />
+	     <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="未读通知"
+	         android:layout_marginLeft="12dp"
+	         android:layout_marginTop="15dp"
+	         android:textAppearance="@style/sty_middle_gray_text"
+	         />
+	     
+	     <ListView 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:cacheColorHint="#00000000"
+	        android:background="#f6f5f0"
+	        android:fadingEdge="none"
+	        android:fadeScrollbars="true"
+	        android:scrollbars="vertical"
+	        android:scrollingCache="false"
+	         >
+	     </ListView>
+     </LinearLayout>
+     
+</LinearLayout>
