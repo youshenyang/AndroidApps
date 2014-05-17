@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部栏 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_nav_bar" 
+    android:gravity="center_vertical"
+    android:background="@drawable/top_nav_shadow"
+    >
+  
+    
+    <ImageView 
+        android:id="@+id/top_nav_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/inform_center_top_bg"
+        android:alpha="0"
+        />
+    
+       <LinearLayout 
+         android:id="@+id/top_back_btn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_centerVertical="true"
+         android:background="@drawable/clickable_bg_selector"
+         >
+         
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/top_back_btn"
+             android:layout_marginLeft="4dp"
+             />
+     </LinearLayout>
+     
+     <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_toRightOf="@id/top_back_btn"
+           android:layout_centerVertical="true"
+           android:gravity="center"
+           >
+         <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="哪有美食"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          />
+       </LinearLayout>
+         
+    <LinearLayout 
+         android:id="@+id/top_more_btn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:background="@drawable/clickable_bg_selector"
+         >
+         
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/top_more_btn"
+             />
+    </LinearLayout>
+    
+    <LinearLayout 
+      android:id="@+id/inform_ring_btn"
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:layout_toLeftOf="@id/top_more_btn"
+      android:layout_marginRight="20dp"
+      android:layout_centerVertical="true"
+      android:background="@drawable/clickable_bg_selector"
+      >
+         
+      <ImageView 
+          android:id="@+id/inform_ring_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/inform_ring_btn"
+          />
+   </LinearLayout>
+
+</RelativeLayout>

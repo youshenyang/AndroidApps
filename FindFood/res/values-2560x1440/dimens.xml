@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="top_nav_bar">48dp</dimen>
+   
+    <!-- 通知中心评论卡片小头像宽高 -->
+    <dimen name="user_icon_width_min">32dp</dimen>
+    <dimen name="user_icon_height_min">32dp</dimen>
+    
+    <!-- 个人主页关注卡片较大头像宽高 -->
+    <dimen name="user_icon_width_bigger">42.5dp</dimen>
+    <dimen name="user_icon_height_bigger">42.5dp</dimen>
+    
+    <!-- 卡片内容与卡片边的间距 -->
+    <dimen name="card_padding">10dp</dimen>
+
+</resources>

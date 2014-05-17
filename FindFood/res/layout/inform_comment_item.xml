@@ -16,8 +16,8 @@
          <!-- 头像  -->
          <ImageView 
              android:id="@+id/iv_user_icon"
-             android:layout_width="32dp"
-             android:layout_height="32dp"
+             android:layout_width="@dimen/user_icon_width_min"
+             android:layout_height="@dimen/user_icon_height_min"
              android:background="@drawable/head_icon_rabit"
              />
          <LinearLayout 

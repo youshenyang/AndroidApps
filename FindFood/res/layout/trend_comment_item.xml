@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用户主页-评价动态卡片 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/gray_listview_bg">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="8dp">
+        <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:background="@color/comment_time_line_bg"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_dialog_flag_bg"
+            android:layout_marginTop="3dp"
+            />
+        <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/comment_time_line_bg"
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="2dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/dialog_bg">
+        <TextView 
+            android:id="@+id/has_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/has_evaluate"
+            android:textAppearance="@style/sty_light_gray_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView 
+            android:id="@+id/foodname"
+            android:layout_toRightOf="@id/has_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鱼香茄子饭"
+            android:textAppearance="@style/sty_orange_text"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/has_comment"/>
+        
+        <RatingBar 
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/star_width_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            style="@style/sty_custom_ratingbar"
+            android:layout_alignTop="@+id/has_comment"
+            />
+        
+        <TextView 
+            android:id="@+id/comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="这家店的鱼香茄子饭真实一流的，我都加了好几次饭了！可以说是这里最厉害的米饭杀手！"
+            android:textAppearance="@style/sty_dark_gray_text"
+            android:layout_below="@id/has_comment"
+            android:layout_alignLeft="@id/has_comment"
+            android:layout_alignRight="@id/rating_bar"
+            android:layout_marginTop="2dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

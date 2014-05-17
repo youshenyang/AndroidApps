@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 关注的吃货和粉丝卡片 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dip" 
+    android:background="@drawable/card_rect_bg"
+    >
+    <ImageView 
+        android:id="@+id/user_icon"
+        android:layout_width="@dimen/user_icon_width_bigger"
+        android:layout_height="@dimen/user_icon_height_bigger"
+        android:background="@drawable/head_icon_bigger"
+        android:layout_marginLeft="@dimen/card_padding" 
+        android:layout_marginTop="@dimen/card_padding"/>  
+     
+    <TextView 
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小亮亮"
+        android:textSize="13sp"
+        android:layout_toRightOf="@id/user_icon"
+        android:layout_alignTop="@id/user_icon"
+        android:layout_marginLeft="8dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    
+    <TextView 
+        android:id="@+id/user_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我再怎么吃都吃不胖？？？？"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/sty_middle_gray_text"
+        android:textSize="12sp"
+        android:layout_alignLeft="@id/username"
+        android:layout_below="@id/username"
+        />
+    
+    <TextView 
+        android:id="@+id/trend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trend"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/sty_light_gray_text"
+        android:textSize="11sp"
+        android:layout_alignLeft="@id/user_desc"
+        android:layout_below="@id/user_desc"
+        />
+    
+    <TextView 
+        android:id="@+id/trend_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27"
+        android:textAppearance="@style/sty_dark_gray_text"
+        android:textSize="11sp"
+        android:layout_toRightOf="@id/trend"
+        android:layout_alignTop="@id/trend"
+        android:layout_marginLeft="2dp"
+        />
+    
+    <View 
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/trend_count"
+        android:layout_alignTop="@id/trend_count"
+        android:layout_alignBottom="@id/trend_count"
+        android:background="#dddcd8"
+        android:layout_marginLeft="5dp"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/focus"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/sty_light_gray_text"
+        android:textSize="11sp"
+        android:layout_toRightOf="@id/trend_count"
+        android:layout_alignTop="@id/trend_count"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/focus_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textAppearance="@style/sty_dark_gray_text"
+        android:textSize="11sp"
+        android:layout_toRightOf="@id/focus"
+        android:layout_alignTop="@id/focus"
+        android:layout_marginLeft="2dp"
+        />
+    
+    <View 
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/focus_count"
+        android:layout_alignTop="@id/focus_count"
+        android:layout_alignBottom="@id/trend_count"
+        android:background="#dddcd8"
+        android:layout_marginLeft="5dp"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fans"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/sty_light_gray_text"
+        android:textSize="11sp"
+        android:layout_toRightOf="@id/focus_count"
+        android:layout_alignTop="@id/focus_count"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/fans_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textAppearance="@style/sty_dark_gray_text"
+        android:textSize="11sp"
+        android:layout_toRightOf="@id/fans"
+        android:layout_alignTop="@id/fans"
+        android:layout_marginLeft="2dp"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/focus_btn"
+        android:layout_width="@dimen/user_foucs_btn_width"
+        android:layout_height="@dimen/user_foucs_btn_height"
+        android:orientation="vertical"
+        android:background="@drawable/green_btn_bg"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+        <TextView 
+            android:id="@+id/focus_btn_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_focus"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    
+</RelativeLayout>

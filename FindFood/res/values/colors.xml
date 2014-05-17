@@ -2,4 +2,17 @@
 <resources>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="gray_listview_bg">#f6f5f0</color>
+    <color name="comment_time_line_bg">#e8e6de</color>
+    <color name="orange">#ff8d31</color>
+    <color name="trendcard_gray_line">#eaeaea</color>
+    <color name="trendcard_menu_bg">#fbfbfb</color>
+    <color name="comment_list_divider_bg">#f3f3f3</color>
+    <color name="deep_gray">#f1efe7</color>
+    <!-- 控件按下时背景颜色 -->
+    <color name="pressed_bg">#fff799</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    
+    <drawable name="transparent_background">#00000000</drawable>
 </resources>

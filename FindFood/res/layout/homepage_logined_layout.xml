@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页(已登陆) -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/ct.finded.findfood">
+    
+    <ct.finded.findfood.control.PageScrollView 
+        android:id="@+id/page_scrollview"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_listview_bg"
+        > 
+      <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+	      <RelativeLayout 
+	        android:id="@+id/page_header"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/top_area_height"
+	        android:background="@drawable/default_home_bg"
+	        >
+	       
+	        <LinearLayout 
+	            android:id="@+id/user_icon_area"
+	            android:layout_width="@dimen/circle_head_big"
+	            android:layout_height="@dimen/circle_head_big"
+	            android:orientation="vertical"
+	            android:background="@drawable/clickable_bg_selector"
+	            android:layout_centerInParent="true">
+	            <ct.finded.findfood.control.CircleImageView 
+	                android:id="@+id/user_icon"
+	                android:layout_width="@dimen/circle_head_big"
+	                android:layout_height="@dimen/circle_head_big"
+	                android:scaleType="centerCrop"
+	                app:border_width="@dimen/circle_head_border"
+	                app:border_color="@color/white"
+	                />
+	        </LinearLayout>
+	        
+	       
+	        
+	      <TextView 
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="都敏俊"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/user_icon_area"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            />
+        
+        <TextView 
+            android:id="@+id/user_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="炸鸡和啤酒？炒粉和粿条才是王道！"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            />
+	        
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/active_search_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/search_bar_height"
+	        android:orientation="horizontal"
+	        android:padding="5dp"
+	        android:background="@color/white">
+	        <AutoCompleteTextView 
+	            android:id="@+id/active_search"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:hint="@string/search_hint"
+	            android:textSize="12sp"
+	            android:drawableStart="@drawable/search_icon"
+	            android:drawablePadding="15dp"
+	            android:imeOptions="actionSearch"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/hot_menu_suggest_bar_height"
+	        android:orientation="horizontal"
+	        android:background="@drawable/deep_gray_bg"
+	        >
+	        <LinearLayout 
+	            android:id="@+id/suggest_food1_btn"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/clickable_bg_selector"
+	            >
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/orange_circle_l"
+	                />
+	            <TextView 
+	                android:id="@+id/suggest_food1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:textSize="12sp"/>
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:id="@+id/suggest_food2_btn"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/clickable_bg_selector">
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/orange_circle_l"
+	                />
+	            <TextView 
+	                android:id="@+id/suggest_food2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:textSize="12sp"/>
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:id="@+id/suggest_food3_btn"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/clickable_bg_selector">
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/orange_circle_l"
+	                />
+	            <TextView 
+	                android:id="@+id/suggest_food3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:textSize="12sp"/>
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:id="@+id/suggest_food4_btn"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:background="@drawable/clickable_bg_selector">
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/orange_circle_l"
+	                />
+	            <TextView 
+	                android:id="@+id/suggest_food4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:textSize="12sp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	         <ct.finded.findfood.control.MyListView
+	                android:id="@+id/user_trend_list"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:cacheColorHint="#00000000"
+	                android:fadingEdge="none"
+	                android:fadeScrollbars="true"
+	                android:scrollbars="vertical"
+	                android:scrollingCache="false"
+	                android:divider="#00000000"
+	                android:dividerHeight="10dp"
+	                />
+	          <include layout="@layout/footer_loading_progress_tip"
+			        android:layout_width="fill_parent" android:layout_height="wrap_content"
+			        />
+	    </LinearLayout>
+    </LinearLayout>
+    </ct.finded.findfood.control.PageScrollView>
+    
+    
+        <!-- 顶部栏 -->
+     <include 
+         android:id="@+id/top_nav"
+         layout="@layout/top_nav_layout"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/top_nav_bar"/> 
+              
+     <LinearLayout 
+            android:id="@+id/static_search_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/search_bar_height"
+	        android:orientation="horizontal"
+	        android:padding="5dp"
+	        android:background="@color/white"
+	        android:layout_below="@id/top_nav"
+	        android:visibility="invisible">
+	        <AutoCompleteTextView 
+	            android:id="@+id/static_search"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:hint="@string/search_hint"
+	            android:textSize="12sp"
+	            android:drawableStart="@drawable/search_icon"
+	            android:drawablePadding="15dp"
+	            android:imeOptions="actionSearch"/>
+	    </LinearLayout>
+
+</RelativeLayout>

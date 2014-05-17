@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 搜索结果页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">	
+    
+    <include 
+        android:id="@+id/top_nav"
+        layout="@layout/top_nav_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_nav_bar"/>
+    
+    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/search_bar_height"
+	        android:orientation="horizontal"
+	        android:padding="5dp"
+	        android:background="@color/white">
+	        <AutoCompleteTextView 
+	            android:id="@+id/search_key"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:hint="@string/search_hint"
+	            android:textSize="12sp"
+	            android:drawableStart="@drawable/search_icon"
+	            android:drawablePadding="15dp"
+	            android:singleLine="true"
+	            android:imeOptions="actionSearch"
+	            />
+	</LinearLayout>
+	
+     <LinearLayout 
+         android:id="@+id/search_result_area"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="vertical"
+         android:background="@color/gray_listview_bg"
+         >
+        
+	     <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/search_result"
+	         android:layout_marginLeft="12dp"
+	         android:layout_marginTop="15dp"
+	         android:textAppearance="@style/sty_middle_gray_text"
+	         />
+	     
+	     <ListView 
+	        android:id="@+id/search_result_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:cacheColorHint="#00000000"
+	        android:background="@color/gray_listview_bg"
+	        android:fadingEdge="none"
+	        android:fadeScrollbars="true"
+	        android:scrollbars="vertical"
+	        android:scrollingCache="false"
+	        android:layout_marginLeft="@dimen/card_padding"
+	        android:layout_marginRight="@dimen/card_padding"
+	        android:divider="@color/transparent"
+	        android:dividerHeight="@dimen/card_padding"
+	        android:layout_marginTop="@dimen/card_padding"
+	         >
+	     </ListView>
+	     <include layout="@layout/footer_loading_progress_tip"
+			        android:layout_width="fill_parent" android:layout_height="wrap_content"
+			        />
+     </LinearLayout>
+     
+   <!-- 
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:orientation="vertical"
+         android:background="#f6f5f0"
+         >
+	     <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/related_suggest"
+	         android:layout_marginLeft="12dp"
+	         android:layout_marginTop="15dp"
+	         android:textAppearance="@style/sty_middle_gray_text"
+	         />
+	     
+	     <ListView 
+	        android:id="@+id/related_suggest_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:cacheColorHint="#00000000"
+	        android:background="@color/gray_listview_bg"
+	        android:fadingEdge="none"
+	        android:fadeScrollbars="true"
+	        android:scrollbars="vertical"
+	        android:scrollingCache="false"
+	         >
+	     </ListView>
+     </LinearLayout>
+     -->
+
+</LinearLayout>

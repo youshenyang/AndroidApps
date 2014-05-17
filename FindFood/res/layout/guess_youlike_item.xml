@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 猜你喜欢卡片 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="108dp"
+    android:layout_height="126dp"
+    android:orientation="vertical"
+    android:background="@drawable/guess_youlike_bg"
+     >
+    <ImageView 
+        android:id="@+id/food_pic"
+        android:layout_width="108dp"
+        android:layout_height="81.5dp"
+        android:background="@drawable/guess_pic"
+        android:scaleType="centerCrop"/>
+    <TextView 
+        android:id="@+id/food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="梅菜扣肉饭"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        >
+            <RatingBar 
+	            android:id="@+id/rating_bar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="@dimen/star_width_height"
+	            style="@style/sty_custom_ratingbar"
+	            android:max="100"
+              />
+            <TextView 
+                android:id="@+id/food_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textAppearance="@style/sty_light_gray_text"
+                android:text="3.2分"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

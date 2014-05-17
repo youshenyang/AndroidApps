@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部栏(背景透明) -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_nav_bar" 
+    android:gravity="center_vertical"
+    android:background="@drawable/top_nav_shadow">
+
+     <LinearLayout 
+         android:id="@+id/top_back_btn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:gravity="center"
+         android:orientation="horizontal">
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/top_back_btn"
+             android:layout_marginLeft="4dp"
+             />
+     </LinearLayout>
+        
+     <LinearLayout 
+         android:id="@+id/top_more_btn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_alignParentRight="true"
+         >
+         
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/top_more_btn"
+             />
+    </LinearLayout>
+    
+    <LinearLayout 
+      android:id="@+id/inform_ring_btn"
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:layout_toLeftOf="@id/top_more_btn"
+      android:layout_marginRight="20dp"
+      android:visibility="gone"
+      >
+         
+      <ImageView 
+          android:id="@+id/inform_ring_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/inform_ring_btn"
+          />
+   </LinearLayout>
+
+</RelativeLayout>

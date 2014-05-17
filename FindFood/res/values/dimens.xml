@@ -5,5 +5,61 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     
     <dimen name="top_nav_bar">48dp</dimen>
+    
+    <!-- 搜索栏的高度 -->
+    <dimen name="search_bar_height">42.5dp</dimen>
+    
+    <!-- 热门菜式推荐栏的高度 -->
+    <dimen name="hot_menu_suggest_bar_height">40dp</dimen>
+    
+    <!-- 搜索结果列表菜式图片的宽和高 -->
+    <dimen name="search_result_pic_width">62dp</dimen>
+    <dimen name="search_result_pic_height">46dp</dimen>
+    
+    <!-- 登陆界面 -->
+    <dimen name="login_edt_margin_left_right">33dp</dimen>
+    <dimen name="login_first_edt_margin_top">287dp</dimen>
+    <dimen name="login_edt_margin_each">25dp</dimen>
+    
+    <!-- 菜式图片和个人信息背景图高度 -->
+    <dimen name="top_area_height">184dp</dimen>
+    <dimen name="top_area_height_under">141.5dp</dimen>
+   
+    <!-- 通知中心评论卡片小头像宽高 -->
+    <dimen name="user_icon_width_min">32dp</dimen>
+    <dimen name="user_icon_height_min">32dp</dimen>
+    
+    <!-- 通知中心tab的高度和宽度 -->
+    <dimen name="user_center_tab_height">43dp</dimen>
+    <dimen name="user_center_tab_width">120dp</dimen>
+    
+    <!-- 通知中心tab间的分割线的高度 -->
+     <dimen name="user_center_tab_seq_height">23dp</dimen>
+     <dimen name="user_center_tab_seq_margintop">8dp</dimen>
+    
+    
+    <!-- 个人主页关注卡片较大头像宽高 -->
+    <dimen name="user_icon_width_bigger">42.5dp</dimen>
+    <dimen name="user_icon_height_bigger">42.5dp</dimen>
+    
+    <!-- 卡片内容与卡片边的间距 -->
+    <dimen name="card_padding">10dp</dimen>
+    
+    <!-- 评价星星的高度和宽度 -->
+    <dimen name="star_width_height">9.5dp</dimen>
+    
+    <!-- 圆形大头像的宽高 -->
+    <dimen name="circle_head_big">80dp</dimen>
+    <!-- 圆形小头像的宽高 -->
+    <dimen name="circle_head_small">32dp</dimen>
+    <!-- 圆形大头像的边框 -->
+    <dimen name="circle_head_border">2dp</dimen>
+    
+    <!-- 用户中心 -->
+    <!-- 关注按钮的高度和宽度 -->
+    <dimen name="user_foucs_btn_width">75dp</dimen>
+    <dimen name="user_foucs_btn_height">28.5dp</dimen>
+    
+    
 
 </resources>

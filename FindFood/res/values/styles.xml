@@ -40,5 +40,30 @@
         <item name="android:textColor">#cb8831</item>
         <item name="android:textSize">13sp</item>
     </style>
+    
+    <!-- 橙色字体样式 -->
+    <style name="sty_orange_text">
+        <item name="android:textColor">#ff8d31</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    
+    <style name="sty_custom_ratingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_progress</item>
+        <item name="android:minHeight">@dimen/star_width_height</item>
+        <item name="android:maxHeight">@dimen/star_width_height</item>
+        <item name="android:stepSize">0.1</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:numStars">4</item>
+        <item name="android:max">100</item>
+    </style>
+    
+    
+      <style name="MyDialog" parent="@android:Theme.Dialog">
+       <item name="android:windowFrame">@null</item>
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:windowBackground">@drawable/transparent_background</item>
+       <item name="android:windowIsFloating">true</item> 
+	   <item name="android:windowContentOverlay">@null</item>    
+	</style>
 
 </resources>
